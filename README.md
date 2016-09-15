@@ -150,12 +150,15 @@ You should have Git installed and have joined the MIT-DB-Class organization from
    You should see something like the following:
 
    ```
-    Counting objects: 5, done.
-    Delta compression using up to 4 threads.
-    Compressing objects: 100% (3/3), done.
-    Writing objects: 100% (3/3), 294 bytes | 0 bytes/s, done.
-    Total 3 (delta 2), reused 0 (delta 0)
-    To git@github.com:MIT-DB-Class/homework-solns-2016-becca.git   f726472..545a4f0  master -> master
+	Counting objects: 59, done.
+	Delta compression using up to 4 threads.
+	Compressing objects: 100% (53/53), done.
+	Writing objects: 100% (59/59), 420.46 KiB | 0 bytes/s, done.
+	Total 59 (delta 2), reused 59 (delta 2)
+	remote: Resolving deltas: 100% (2/2), done.
+	To git@github.com:MIT-DB-Class/homework-solns-2016-<athena username>.git
+	 * [new branch]      master -> master
+	Branch master set up to track remote branch master from origin.
    ```
 
 5. That last command was a bit special and only needs to be run the first time to setup the remote tracking branches. Now we should be able to just run `git push` without the arguments. Try it and you should get the following:
@@ -177,13 +180,7 @@ Pulling in labs that are released or previous lab solutions should be easy as lo
 
 	Check it periodically as well as Piazza's announcements for updates on when the new labs are released.
 
-2. Once a lab is released, create a branch to pull in the changes.  From your simpledb directory:
-   
-   ```bash
-    $ git checkout -b lab2
-   ```
-   
-  Pulling in the changes should be fairly simple:
+2. Once a lab is released, pull in the changes from your simpledb directory:
 
    ```bash
     $ git pull upstream master
@@ -195,28 +192,24 @@ Pulling in labs that are released or previous lab solutions should be easy as lo
     $ git fetch upstream
     $ git merge upstream/master
    ```
-   Now commit to your new branch:
+   Now commit to your master branch:
    ```bash
-	$ git push origin lab2
+	$ git push origin master
    ```
 
 3. If you've followed the instructions in each lab, you should have no merge conflicts and everything should be peachy.
 
 ## <a name="submitting-your-lab"></a> Submitting Your Labs
 
-You may submit your code multiple times; we will use the latest version you submit that arrives before the deadline (before 11:59 PM on the due date). Place the write-up in a file called <tt>lab#-writeup.txt</tt>, which has been created for you in the top level of your <tt>simple-db-hw</tt> directory. **Important:** In order for your write-up to be added to the git repo, you need to explicitly add it:
+You may submit your code multiple times; we will use the latest version you submit that arrives before the deadline (before 11:59 PM on the due date). Place the write-up in a file called <tt>lab#-writeup.txt</tt>, which has been created for you in the top level of your <tt>simple-db-hw</tt> directory.
 
-```bash
-$ git add answers.txt
-```
-
-You also need to explicitly add any other files you create, such as new *.java files.
+You need to explicitly add any other files you create, such as new *.java files.
 
 The criteria for your lab being submitted on time is that your code must be **tagged** and  **pushed** by the date and time. This means that if one of the TAs or the instructor were to open up GitHub, they would be able to see your solutions on the GitHub web page.
 
 Just because your code has been committed on your local machine does not mean that it has been **submitted**; it needs to be on GitHub.
 
-There is a bash script `turnInLab1.sh` in the root level directory of simple-db-hw that commits  your changes, deletes any prior tag for the current lab, tags the current commit, and pushes the branch and tag to github.  If you are using Linux or Mac OSX, you should be able to run the following:
+There is a bash script `turnInLab1.sh` in the root level directory of simple-db-hw that commits  your changes, deletes any prior tag for the current lab, tags the current commit, and pushes the tag to github.  If you are using Linux or Mac OSX, you should be able to run the following:
 
 ```bash
 $ ./turnInLab1.sh
@@ -226,23 +219,22 @@ You should see something like the following output:
 
  ```bash
  $ ./turnInLab1.sh 
-[master b155ba0] Lab 1
- 1 file changed, 1 insertion(+)
-Deleted tag 'lab1' (was b26abd0)
-To git@github.com:MIT-DB-Class/homework-solns-2016-becca.git
- - [deleted]         lab1
-Counting objects: 11, done.
+error: tag 'lab1submit' not found.
+remote: warning: Deleting a non-existent ref.
+To git@github.com:MIT-DB-Class/homework-solns-2016-<athena username>.git
+ - [deleted]         lab1submit
+[master 7a26701] Lab 1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 aaa
+Counting objects: 3, done.
 Delta compression using up to 4 threads.
-Compressing objects: 100% (4/4), done.
-Writing objects: 100% (6/6), 448 bytes | 0 bytes/s, done.
-Total 6 (delta 3), reused 0 (delta 0)
-To git@github.com:MIT-DB-Class/homework-solns-2016-becca.git
-   ae31bce..b155ba0  master -> master
-Counting objects: 1, done.
-Writing objects: 100% (1/1), 152 bytes | 0 bytes/s, done.
-Total 1 (delta 0), reused 0 (delta 0)
-To git@github.com:MIT-DB-Class/homework-solns-2016-becca.git
- * [new tag]         lab1 -> lab1
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 353 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
+To git@github.com:MIT-DB-Class/homework-solns-2016-<athena username>.git
+   069856c..7a26701  master -> master
+ * [new tag]         lab1submit -> lab1submit
 ```
 
 
@@ -263,20 +255,19 @@ If the above command worked for you, you can skip to item 6 below.  If not, subm
 3. Delete any prior local and remote tag (*this will return an error if you have not tagged previously; this allows you to submit multiple times*)
 
    ```bash
-   $ git tag -d lab1
-   $ git push origin :refs/tags/lab1
+   $ git tag -d lab1submit
+   $ git push origin :refs/tags/lab1submit
    ```
 
 4. Tag your last commit as the lab to be graded (*again, update the lab ID for later labs*)
    ```bash
-   $ git tag -a lab1 -m 'lab1'
+   $ git tag -a lab1submit -m 'submit lab 1'
    ```
 
 5. This is the most important part: **push** your solutions to GitHub.
 
    ```bash
-   $ git push origin master
-   $ git push origin lab1 
+   $ git push origin master --tags
    ```
 
 6. The last thing that we strongly recommend you do is to go to the [MIT-DB-Class] organization page on GitHub to make sure that we can see your solutions.

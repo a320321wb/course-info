@@ -586,23 +586,22 @@ You should see something like the following output:
 
  ```bash
  $ ./turnInLab1.sh 
-[master b155ba0] Lab 1
- 1 file changed, 1 insertion(+)
-Deleted tag 'lab1' (was b26abd0)
-To git@github.com:MIT-DB-Class/hw-answers-becca.git
- - [deleted]         lab1
-Counting objects: 11, done.
+error: tag 'lab1submit' not found.
+remote: warning: Deleting a non-existent ref.
+To git@github.com:MIT-DB-Class/homework-solns-2016-<athena username>.git
+ - [deleted]         lab1submit
+[master 7a26701] Lab 1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 aaa
+Counting objects: 3, done.
 Delta compression using up to 4 threads.
-Compressing objects: 100% (4/4), done.
-Writing objects: 100% (6/6), 448 bytes | 0 bytes/s, done.
-Total 6 (delta 3), reused 0 (delta 0)
-To git@github.com:MIT-DB-Class/hw-answers-becca.git
-   ae31bce..b155ba0  master -> master
-Counting objects: 1, done.
-Writing objects: 100% (1/1), 152 bytes | 0 bytes/s, done.
-Total 1 (delta 0), reused 0 (delta 0)
-To git@github.com:MIT-DB-Class/hw-answers-becca.git
- * [new tag]         lab1 -> lab1
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 353 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
+To git@github.com:MIT-DB-Class/homework-solns-2016-<athena username>.git
+   069856c..7a26701  master -> master
+ * [new tag]         lab1submit -> lab1submit
 ```
 
 
@@ -623,20 +622,19 @@ If the above command worked for you, you can skip to item 6 below.  If not, subm
 3. Delete any prior local and remote tag (*this will return an error if you have not tagged previously; this allows you to submit multiple times*)
 
    ```bash
-   $ git tag -d lab1
-   $ git push origin :refs/tags/lab1
+   $ git tag -d lab1submit
+   $ git push origin :refs/tags/lab1submit
    ```
 
 4. Tag your last commit as the lab to be graded
    ```bash
-   $ git tag -a lab1 -m 'lab1'
+   $ git tag -a lab1submit -m 'submit lab 1'
    ```
 
 5. This is the most important part: **push** your solutions to GitHub.
 
    ```bash
-   $ git push origin master
-   $ git push origin lab1 
+   $ git push origin master --tags
    ```
 
 6. The last thing that we strongly recommend you do is to go to the
@@ -645,7 +643,7 @@ If the above command worked for you, you can skip to item 6 below.  If not, subm
 
    Just navigate to your repository and check that your latest commits are on
    GitHub. You should also be able to check 
-   `https://github.com/MIT-DB-Class/hw-answers-(your student name)/tree/lab1`
+   `https://github.com/MIT-DB-Class/homework-solns-2016-<athena username>/tree/lab1submit`
 
 
 #### <a name="word-of-caution"></a> Word of Caution
