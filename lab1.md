@@ -184,7 +184,7 @@ where <tt>file.dat</tt> is the name of a table created with the <tt>convert</tt>
 *    On the same screen that you entered the project name, select "Create project from existing source," and browse to $W/simple-db-hw.
 *    Click finish, and you should be able to see "simple-db-hw" as a new project in the Project Explorer tab on the left-hand side of your screen. Opening this project reveals the directory structure discussed above - implementation code can be found in "src," and unit tests and system tests found in "test." 
 
-**Note:** that this class assumes that you are using the official Oracle release of Java.  This is the default on MacOS X, and for most Windows Eclipse installs; but many Linux distributions default to alternate Java runtimes (like OpenJDK). Please download the latest Java6 updates from [Oracle Website](http://www.oracle.com/technetwork/java/javase/downloads/index.html), and use that Java version. If you don't switch, you may see spurious test failures in some of the performance tests in later labs.
+**Note:** that this class assumes that you are using the official Oracle release of Java.  This is the default on MacOS X, and for most Windows Eclipse installs; but many Linux distributions default to alternate Java runtimes (like OpenJDK). Please download the latest Java8 updates from [Oracle Website](http://www.oracle.com/technetwork/java/javase/downloads/index.html), and use that Java version. If you don't switch, you may see spurious test failures in some of the performance tests in later labs.
 
 **Running Individual Unit and System Tests**
 
