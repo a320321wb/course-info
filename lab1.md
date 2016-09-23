@@ -565,11 +565,8 @@ that, untarred, it creates a <tt>6.830-lab1/src/simpledb</tt> directory with
 your code) and submit it on the [6.830 Stellar Site](https://stellar.mit.edu/S/course/6/sp13/6.830/index.html). You can use the `ant handin` target to generate the tarball.
 -->
 
-You may submit your code multiple times; we will use the latest version you submit that arrives before the deadline (before 11:59 PM on the due date).Place the write-up in a file called lab#-writeup.txt, which has been created for you in the top level of your simple-db-hw directory.  **Important:**  In order for your write-up to be added to the git repo, you need to explicitly add it:
+You may submit your code multiple times; we will use the latest version you submit that arrives before the deadline (before 11:59 PM on the due date).Place the write-up in a file called lab1-writeup.txt, which has been created for you in the top level of your simple-db-hw directory. 
 
-```bash
-$ git add answers.txt
-```
 You also need to explicitly add any other files you create, such as new *.java  files.
 
 The criteria for your lab being submitted on time is that your code must be **tagged** and  **pushed** by the date and time. This means that if one of the TAs or the instructor were to open up GitHub, they would be able to see your solutions on the GitHub web page.
