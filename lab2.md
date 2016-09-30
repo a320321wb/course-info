@@ -50,7 +50,7 @@ for this lab that are not in the original code distribution you received.
 
 You will need to add these new files to your release. The easiest way
 to do this is to change to your project directory (probably called simple-db-hw) 
-and pull from the master GitHub repository into a new branch named lab2:
+and pull from the master GitHub repository:
 
 ```
 $ cd simple-db-hw
@@ -690,7 +690,7 @@ mean that it has been **submitted**; it needs to be on GitHub.
 
 There is a bash script `turnInLab2.sh` in the root level directory of simple-db-hw that commits 
 your changes, deletes any prior tag
-for the current lab, tags the current commit, and pushes the branch and tag 
+for the current lab, tags the current commit, and pushes the tag 
 to GitHub.  If you are using Linux or Mac OSX, you should be able to run the following:
 
    ```bash
