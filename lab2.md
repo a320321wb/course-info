@@ -673,7 +673,7 @@ your individual writeup as a PDF or plain text file (.txt).  Please do not submi
 
 Make sure your code is packaged so the instructions outlined in section 3.4 work.-->
 
-You may submit your code multiple times; we will use the latest version you submit that arrives before the deadline (before 11:59 PM on the due date).Place the write-up in a file called lab2-writeup.txt, which has been created for you in the top level of your simple-db-hw directory.
+You may submit your code multiple times; we will use the latest version you submit that arrives before the deadline (before 11:59 PM on the due date). Place the write-up in a file called lab2-writeup.txt, which has been created for you in the top level of your simple-db-hw directory.
 
 
 You also need to explicitly add any other files you create, such as new *.java 
