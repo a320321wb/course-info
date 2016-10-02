@@ -317,8 +317,6 @@ complete this lab.
 After completing this exercise, you should be able to pass the 
 <tt>IntHistogramTest</tt> unit test (you are not required to pass this test if you
 choose not to implement histogram-based selectivity estimation).
-***
-
 
 ***
 **Exercise 2:  TableStats.java**
