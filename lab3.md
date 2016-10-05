@@ -1,7 +1,7 @@
 # 6.830 Lab 3: Query Optimization
 
-**Assigned: Wednesday, October 5, 2015**<br>
-**Due: Wednesday, October 24, 2015**
+**Assigned: Wednesday, October 5, 2016**<br>
+**Due: Monday, October 24, 2016**
 
 
 
