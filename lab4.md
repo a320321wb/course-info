@@ -436,7 +436,11 @@ to retry transaction *t*.
 
   
 
-  Your code should now should pass the `TransactionTest` system test (which may also run for quite a long time).  If everything is implemented correctly, you should also be able to pass the `BTreeTest` system test.  We expect many people to find `BTreeTest` difficult, so it's not required, but we'll give extra credit to anyone who can run it successfully.  Please note that this test may take up to a minute to complete.
+  Your code should now should pass the `TransactionTest` system test (which may also run for quite a long time).  
+
+<!--  
+If everything is implemented correctly, you should also be able to pass the `BTreeTest` system test.  We expect many people to find `BTreeTest` difficult, so it's not required, but we'll give extra credit to anyone who can run it successfully.  Please note that this test may take up to a minute to complete.
+-->
 
    At this point, you should have a recoverable database, in the
 sense that if the database system crashes (at a point other than
@@ -638,7 +642,7 @@ make sure it produces no errors (passes all of the tests) from both
 <tt>ant test</tt> and <tt>ant systemtest</tt>.
 
 
-
+<!--
 **Important:** Before testing, we will replace your <tt>build.xml</tt>,
 <tt>HeapFileEncoder.java</tt>, <tt>BTreeFileEncoder.java</tt>, and the entire contents of the
 <tt>test/</tt> directory with our version of these files!  This
@@ -647,10 +651,30 @@ therefore be careful changing our APIs. This also means you need to test
 whether your code compiles with our test programs. In other words, we will
 pull your repo, replace the files mentioned above, compile it, and then
 grade it. It will look roughly like this:
+-->
 
+**Important:** Before testing, we will replace your <tt>build.xml</tt>,
+<tt>HeapFileEncoder.java</tt>, and the entire contents of the
+<tt>test/</tt> directory with our version of these files!  This
+means you cannot change the format of <tt>.dat</tt> files!  You should
+therefore be careful changing our APIs. This also means you need to test
+whether your code compiles with our test programs. In other words, we will
+pull your repo, replace the files mentioned above, compile it, and then
+grade it. It will look roughly like this:
+
+<!--
 ```
 $ git pull
 [replace build.xml, HeapFileEncoder.java, BTreeFileEncoder.java and test]
+$ ant test
+$ ant systemtest
+[additional tests]
+```
+-->
+
+```
+$ git pull
+[replace build.xml, HeapFileEncoder.java and test]
 $ ant test
 $ ant systemtest
 [additional tests]
