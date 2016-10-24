@@ -665,9 +665,6 @@ $ tar -cvzf 6.830-lab5.tar.gz 6.830-lab5
     
 You may submit your code multiple times; we will use the latest version you submit that arrives before the deadline (before 11:59 PM on the due date). Place the write-up in a file called lab3-writeup.txt, which has been created for you in the top level of your simple-db-hw directory.
 
-```bash
-$ git add answers.txt
-```
 You also need to explicitly add any other files you create, such as new *.java 
 files.
 
@@ -711,7 +708,7 @@ To git@github.com:MIT-DB-Class/homework-solns-2016-<athena username>.git
 ```
 
 
-If the above command worked for you, you can skip to item 6 below.  If not, submit your solutions for Lab 5 as follows:
+If the above command worked for you, you can skip to item 6 below.  If not, submit your solutions for Lab 3 as follows:
 
 1. Look at your current repository status.
 

@@ -719,7 +719,7 @@ To git@github.com:MIT-DB-Class/homework-solns-2016-<athena username>.git
 ```
 
 
-If the above command worked for you, you can skip to item 6 below.  If not, submit your solutions for lab 1 as follows:
+If the above command worked for you, you can skip to item 6 below.  If not, submit your solutions for lab 2 as follows:
 
 1. Look at your current repository status.
 
