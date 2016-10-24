@@ -417,7 +417,7 @@ the flags t1pkey and t2pkey that indicate whether the left and
 right (respectively) field is unique (a primary key).
 
 After implementing these methods, you should be able to pass the unit
-tests in <tt>JoinOptimizerTest.java</tt>, other than <tt>orderJoinsTest</tt>.
+tests <tt>JestimateJoinCostTest</tt> and <tt>JestimateJoinCardinality</tt> in <tt>JoinOptimizerTest.java</tt>.
 ***
 
 
@@ -524,7 +524,7 @@ sub-plans of subsets, calling <tt>computeCostAndCardOfSubplan</tt> and
 building a <tt>PlanCache</tt> object that stores the minimal-cost
 way to perform each subset join.
   
-After implementing this method, you should be able to pass the test
+After implementing this method, you should be able to pass all the unit tests in
 <tt>OrderJoinsTest</tt>.  You should also pass the system test
 <tt>QueryTest</tt>.
 ***
