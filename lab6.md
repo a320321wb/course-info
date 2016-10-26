@@ -316,7 +316,7 @@ If the above command worked for you, you can skip to item 6 below.  If not, subm
 
 4. Tag your last commit as the lab to be graded
    ```bash
-   $ git tag -a lab5submit -m 'submit lab 6'
+   $ git tag -a lab6submit -m 'submit lab 6'
    ```
 
 5. This is the most important part: **push** your solutions to GitHub.
