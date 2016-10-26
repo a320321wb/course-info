@@ -376,9 +376,8 @@ pull your repo, replace the files mentioned above, compile it, and then
 grade it. It will look roughly like this:
 
 ```
-$ git pull origin lab3
+$ git pull
 [replace build.xml, HeapFileEncoder.java, BTreeFileEncoder.java, BTreeChecker.java and test]
-$ git checkout lab3
 $ ant test
 $ ant systemtest
 [additional tests]
