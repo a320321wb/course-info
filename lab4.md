@@ -525,7 +525,7 @@ the GitHub web page.
 Just because your code has been commited on your local machine does not
 mean that it has been **submitted**; it needs to be on GitHub.
 
-There is a bash script `turnInLab2.sh` in the root level directory of simple-db-hw that commits 
+There is a bash script `turnInLab4.sh` in the root level directory of simple-db-hw that commits 
 your changes, deletes any prior tag
 for the current lab, tags the current commit, and pushes the tag 
 to GitHub.  If you are using Linux or Mac OSX, you should be able to run the following:
