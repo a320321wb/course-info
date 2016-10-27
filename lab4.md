@@ -31,7 +31,9 @@ that the unit tests we provide are to help guide your implementation along,
 but they are not intended to be comprehensive or to establish correctness.
 
 
-You will need to add these new files to your release and set up your lab4 branch. The easiest way to do this is to change to your project directory (probably called simple-db-hw), set up the branch, and pull from the master GitHub repository:
+You will need to add these new files to your release. The easiest way
+to do this is to change to your project directory (probably called simple-db-hw) 
+and pull from the master GitHub repository:
 
 ```
 $ cd simple-db-hw
